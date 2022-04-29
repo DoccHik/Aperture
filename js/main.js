@@ -15,7 +15,7 @@ menuIcon.addEventListener('click', function() {
     menuBody.classList.toggle('active');
 
     // Добавляем класс "lock" к тегу body при клике на бургер меню (Чтобы убрать скролл)
-    bodyLock.classList.toggle('lock');
+    bodyLock.classList.add('lock');
 
 
     // Удаляем все добавленные классы
