@@ -38,7 +38,7 @@
                                 <a class="header__menu-link" href="#contact">Contact</a>
                             </li>
                             <li class="header__menu-item">
-                                <button class="header__menu-btn" href="#">Get template</button>
+                                <button class="header__menu-btn" data-modal-button="modal-1">Get template</button>
                             </li>
                         </ul>
                     </nav>
@@ -49,7 +49,6 @@
             </div>
         </div>
         <!-- /.header -->
-
         <div class="header__menu-body">
             <nav class="header__menu-body-nav">
                 <ul class="header__menu-body-list">
@@ -66,12 +65,26 @@
                         <a class="header__menu-body-link" href="#contact">Contact</a>
                     </li>
                     <li class="header__menu-body-item">
-                        <button class="header__menu-body-btn" href="#">Get template</button>
+                        <button class="header__menu-body-btn" data-modal-button="modal-1" type="button">Get template</button>
                     </li>
                 </ul>
             </nav>
         </div>
         <!-- /.header__menu-body -->
+
+        <div class="modal__overlay hidden-modal" data-modal id="modal-1">
+            <div class="container">
+                <div class="modal__window">
+                    <h2 class="modal__window-title">Get template</h2>
+                    <p class="modal__window-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus animi ratione maxime dignissimos dolorem ipsa quibusdam et sint repellat enim aliquid perspiciatis?</p>
+                    <form class="modal__form">
+                        <input type="text" class="modal__input" placeholder="Your email">
+                        <button class="modal__window-btn" type="submit">Subscribe</button>
+                    </form>
+                    <button class="modal__btn-close" data-modal-close>Close</button>
+                </div>
+            </div>
+        </div>
 
         <section class="studio" id="home">
             <div class="container">
