@@ -56,7 +56,6 @@ modalButtonsClose.forEach((item) => {
     item.addEventListener('click', function() {
         const modal = this.closest('[data-modal]');
         modal.classList.add('hidden-modal');
-        bodyLock.classList.remove('lock');
     })
 })
 
