@@ -15,7 +15,7 @@ menuIcon.addEventListener('click', function() {
     menuBody.classList.toggle('active');
 
     // Добавляем класс "lock" к тегу body при клике на бургер меню (Чтобы убрать скролл)
-    bodyLock.classList.add('lock');
+    bodyLock.classList.toggle('lock');
 
 
     // Удаляем все добавленные классы
@@ -48,7 +48,7 @@ modalButtons.forEach((item) => {
         console.log(modal);
 
         modal.classList.remove('hidden-modal');
-        bodyLock.classList.add('lock');
+        bodyLock.classList.add('lock-body');
     })
 });
 
@@ -56,6 +56,7 @@ modalButtonsClose.forEach((item) => {
     item.addEventListener('click', function() {
         const modal = this.closest('[data-modal]');
         modal.classList.add('hidden-modal');
+        bodyLock.classList.remove('lock-body');
     })
 })
 

@@ -33,6 +33,10 @@ body.lock {
   overflow: hidden;
 }
 
+body.lock-body {
+  overflow: hidden;
+}
+
 .hidden {
   display: none;
 }
